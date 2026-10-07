@@ -1,0 +1,9 @@
+{
+  "file_sha256": {
+    "body_larger_than_headers.json": "1319267f2a386df5b464746aa9b4df6407ab8110fd3cde681a3e7ead199a9d9d",
+    "compound_codes_and_relative_sections.json": "967cb535a8b8dc4a9fc5f9d9ba3469998f0f4342dd7d4ad9d6186ff14b4f4c96",
+    "marked_historical_codes_and_metadata.json": "d8b5e8e3f1e077224c9a3c8d70301604ff197b311048ad24994c44ec59b6bc7f"
+  },
+  "schema_version": "course-parser-source-regressions-v3",
+  "status": "EXPOSED_DIAGNOSTIC_NOT_HELD_OUT"
+}

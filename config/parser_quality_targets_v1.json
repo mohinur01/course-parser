@@ -1,0 +1,47 @@
+{
+  "schema_version": "course-parser-quality-targets-v1",
+  "status": "PROJECT_GOAL_NOT_ACHIEVED",
+  "threshold_basis": "Project-specific proposed research-use targets; not published industry standards or measured current performance.",
+  "scope": "Independent courses in university catalogs across institution families, catalog eras, and document layouts. Frozen keyword-hit evaluation is a separate scope from catalog-wide course recall.",
+  "research_use_targets": {
+    "course_precision_min": 0.99,
+    "complete_course_recall_min": 0.95,
+    "course_owned_keyword_precision_min": 0.995,
+    "course_owned_keyword_recall_min": 0.95,
+    "source_traceability_required": 1.0,
+    "original_hit_accounting_required": 1.0
+  },
+  "metric_definitions": {
+    "course_precision": "Correct independent-course records / all proposed independent-course records. References, requirement-list items and duplicate extra records are false positives. Incomplete field recovery is measured separately by complete-course recall.",
+    "complete_course_recall": "Source-complete reviewed courses recovered with all required observable fields and correct ownership/boundaries / all source-complete reviewed courses. Required fields are the printed identifier or historical identifier, title, complete owned description, and separately allocated printed credits/prerequisites, including continuations. Unresolved or failed extraction counts as a miss. Genuine absence must be established from source review.",
+    "course_owned_keyword_precision": "Original physical hits correctly proposed COURSE_OWNED with the correct course and title/description ownership / all original physical hits proposed COURSE_OWNED.",
+    "course_owned_keyword_recall": "Original physical hits correctly proposed COURSE_OWNED with the correct course and field / all source-reviewed original physical hits truly COURSE_OWNED. Pending or abstained true positives count as misses. Ambiguous source ownership stays source-insufficient and is reported separately.",
+    "source_traceability": "Every attached field is linked to exact source evidence, representation, physical page and PDF checksum. This is a structural invariant, not a claim of perfect semantic accuracy.",
+    "original_hit_accounting": "Every original hit appears exactly once in the disposition inventory, including explicit pending or source-insufficient states. This does not require the software to force a decision."
+  },
+  "first_milestone": {
+    "source_reviewed_page_windows_min": 50,
+    "development_course_precision_min": 0.9,
+    "development_complete_course_recall_min": 0.8,
+    "evaluation": "A separate development-validation institution cohort; representative source-reviewed failures become regression cases. These thresholds do not authorize production publication."
+  },
+  "benchmark_design": {
+    "independent_final_source_complete_courses_min": 1000,
+    "independent_final_institution_families_min": 20,
+    "review_standard": "Independent source review, second review of ownership/boundary cases, and adjudication of disagreements. Existing source reviews remain development diagnostics unless independently recertified.",
+    "sampling": "Include probability-sampled pages beyond keyword hits, plus separately reported challenge cases. Inventory every independent course on central pages and obtain enough context to establish complete boundaries. Report results separately for probability and challenge samples.",
+    "required_breakdowns": ["institution_family", "catalog_era", "native_text_or_ocr", "single_or_multicolumn", "table_or_prose", "source_readiness"],
+    "uncertainty": "Report denominators and confidence intervals with institution/catalog clustering accounted for. The initial sample sizes are planning minima, not proof that rare-error thresholds are established; expand evidence if needed.",
+    "category_policy": "Validate each supported category separately. Categories without sufficient evidence or that fail the targets remain under source review; aggregate performance cannot authorize unsupported categories.",
+    "split_policy": "Keep institution aliases and adjacent catalog years in one family. Final test answers cannot be used for training, feature selection or threshold tuning. Preserve existing protected CALIBRATION/TEST pools and the earlier locked pilot."
+  },
+  "invariants": [
+    "Preserve the 33-concept/68-form authoritative matcher and its approved normalization only.",
+    "Do not use keyword presence or department identity to establish an independent course.",
+    "Do not invent source text or silently correct OCR; new OCR remains a separate representation and hit reconciliation scope.",
+    "Source-insufficient cases cannot become negative labels; report their counts and reasons.",
+    "All original hit IDs, task IDs, source spans and PDF checksums remain preserved.",
+    "Model predictions remain proposals and cannot write authoritative review dispositions."
+  ],
+  "review_workload": "Measure abstention rates, review time and the share of page windows requiring manual resolution. Set a workload threshold after the next reviewed pilot rather than assuming an unsupported automation rate."
+}

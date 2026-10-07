@@ -1,0 +1,295 @@
+{
+  "coverage": {
+    "columns_do_not_merge": [
+      "test_continuation.py::test_cross_column_continuation_is_separate_and_preserves_verified_order",
+      "test_page_patterns.py::test_local_support_cannot_cross_sections_columns_or_uncertain_tables",
+      "test_table_structure.py::test_long_description_table_is_not_flattened_as_prose"
+    ],
+    "creditless_course_detected": [
+      "test_contextual.py::test_complete_courses_do_not_require_explicit_credits",
+      "test_table_structure.py::test_inventory_without_printed_credits_still_owns_its_rows",
+      "test_ownership_links.py::test_unbolded_courses_without_credits_are_not_blocked_by_list_check"
+    ],
+    "crop_maps_to_original_pdf": [
+      "test_crop_extractions.py::test_crop_transform_roundtrip_and_exact_render_pixels",
+      "test_crop_extractions.py::test_cropbox_offset_and_rotation_transform_chain",
+      "test_crop_extractions.py::test_transform_and_image_tampering_rejected"
+    ],
+    "description_excludes_next_course": [
+      "test_sequence_boundaries.py::test_boundary_alternatives_reject_attaching_next_course_and_references",
+      "test_historical_headers.py::test_extended_number_and_title_are_only_a_weak_boundary_probe",
+      "test_competing_source_headers.py::test_reviewed_inventory_has_source_supported_complete_courses"
+    ],
+    "historical_numeric_course_detected": [
+      "test_historical_headers.py::test_source_reviewed_numeric_pair_delimiter",
+      "test_page_patterns.py::test_source_reviewed_inline_numeric_courses_are_complete",
+      "test_source_regressions.py::test_exposed_transfer_diagnostics",
+      "test_historical_headers.py::test_extended_numeric_probes_require_other_source_seeds_for_promotion"
+    ],
+    "omission_detector_does_not_auto_accept": [
+      "test_omission_review.py::test_source_only_audit_separate_extractions_and_blank_review_queue",
+      "test_omission_source_regressions.py::test_decimal_headers_with_separate_title_fragments_raise_seven_questions",
+      "test_omission_source_regressions.py::test_administrative_flags_stay_available_at_low_priority",
+      "test_omission_source_regressions.py::test_supported_neighbor_pattern_preserves_a_course_without_printed_description"
+    ],
+    "page_continuation_works": [
+      "test_continuation.py::test_verified_reference_continuation_preserves_exact_source_and_excludes_next_header",
+      "test_continuation.py::test_multiple_streams_and_missing_page_do_not_become_continuation",
+      "test_continuation.py::test_relative_margin_candidate_stays_review_only_by_default",
+      "test_contextual.py::test_selected_window_end_is_not_a_confirmed_course_boundary"
+    ],
+    "precision_review_routing": [
+      "test_precision_policy.py"
+    ],
+    "prerequisite_reference_not_course": [
+      "test_contextual.py::test_prerequisite_course_reference_does_not_split_the_owned_course",
+      "test_ownership_links.py::test_body_reference_cannot_borrow_next_course_title_and_description",
+      "test_competing_source_headers.py::test_competing_source_header_is_withheld_without_double_ownership"
+    ],
+    "prerequisite_separated_from_description": [
+      "test_contextual.py::test_soft_hyphen_prerequisite_label_retains_source_but_changes_field_ownership",
+      "test_contextual.py::test_inline_historical_description_is_preserved_separately_from_title",
+      "test_contextual.py::test_fragmented_eligibility_and_administration_do_not_become_description"
+    ],
+    "regression_catalogue_integrity": [
+      "test_regression_catalogue.py"
+    ],
+    "requirement_list_not_course": [
+      "test_contextual.py::test_repeated_headers_with_prose_inside_requirement_or_reference_container_are_rejected",
+      "test_table_structure.py::test_requirements_win_even_with_repeated_codes_credits_and_narrative",
+      "test_source_regressions.py::test_source_owned_catalog_cases"
+    ],
+    "reserved_access_and_annotation_integrity": [
+      "test_omission_review.py::test_named_reserved_paths_rejected_before_input_lookup",
+      "test_sequence_annotations.py::test_reserved_sequence_inputs_rejected_before_reading",
+      "test_sequence_annotations.py::test_training_import_rejects_source_mutation_missing_coverage_and_leakage",
+      "test_active_annotations.py::test_diagnostic_and_protected_roles_cannot_enter_annotation_draw"
+    ],
+    "source_line_never_disappears": [
+      "test_owned_order.py::test_external_orphan_or_ambiguous_cells_survive_as_unresolved_evidence",
+      "test_owned_order.py::test_external_furniture_label_does_not_delete_a_native_department_heading",
+      "test_ownership_links.py::test_links_reconstruct_each_native_node_and_keep_record_statuses",
+      "test_ownership_links.py::test_links_reject_corrupted_or_unowned_source",
+      "test_table_structure.py::test_conservation_detects_changed_text_and_preserves_row_ids"
+    ],
+    "whole_page_accounting": [
+      "test_page_accounting.py"
+    ],
+    "wrapped_title_reconstructed": [
+      "test_contextual.py::test_wrapped_title_does_not_consume_first_line_of_description",
+      "test_ownership_links.py::test_split_title_without_a_competing_header_remains_supported"
+    ]
+  },
+  "fixture_inventories": {
+    "omission_source_regressions_v1": {
+      "cases": [
+        "administrative_display_headings.json",
+        "decimal_code_only_headers.json",
+        "same_title_distinct_course_positions.json",
+        "supported_pattern_without_description.json"
+      ],
+      "manifest_sha256": "38fe87d73bf47e68521b34f1a1d62cb348fe2b14c36bc5bfe00a8e81b43130ac"
+    },
+    "source_regressions_v2": {
+      "cases": [
+        "credit_and_metadata.json",
+        "distribution_requirements_prose_columns.json",
+        "historical_course_inventory.json",
+        "historical_inline_titles.json",
+        "mixed_requirements_grid_and_prose.json",
+        "noncourse_directory_grid.json"
+      ],
+      "manifest_sha256": "c4665cb8d5b7db6774dfe2bdb057fc7f2b35a4634d24b536f8e96f586879c3ef"
+    },
+    "source_regressions_v3": {
+      "cases": [
+        "body_larger_than_headers.json",
+        "compound_codes_and_relative_sections.json",
+        "marked_historical_codes_and_metadata.json"
+      ],
+      "manifest_sha256": "32e6f8fecbb73aa9351a88f3d253a9066b073ece1f5f5b05ede1d2b20528802f"
+    },
+    "source_regressions_v4": {
+      "cases": [
+        "body_inventory_borrows_next_header.json",
+        "prerequisite_borrows_next_header.json"
+      ],
+      "manifest_sha256": "4eaacd2a95ae082a4ef8f5a97729053df1da8c66cbda351a518bdfa192f2527b"
+    },
+    "source_regressions_v5": {
+      "cases": [
+        "numeric_inline_native_font_boundary.json"
+      ],
+      "manifest_sha256": "b45e4c1f5f3570fd79793a980fac38a2a2f54565b1388d14b0c9b2ea58c76531"
+    },
+    "source_regressions_v6": {
+      "cases": [
+        "numeric_pair_before_inline_description.json"
+      ],
+      "manifest_sha256": "748818b36fdcdf0338c99f4d601a23b781d3b63b0a8f23781337662b63f183a0"
+    }
+  },
+  "oracle_basis": "Existing source-reviewed answers; recovered IDs are capability floors, not new gold. Known ambiguity ceilings remain explicit.",
+  "protected_evaluation_opened": false,
+  "schema_version": "course-parser-permanent-regressions-v1",
+  "scope": "PERMITTED_FROZEN_REGRESSIONS_ONLY",
+  "source_case_contracts": {
+    "source_regressions_v2/credit_and_metadata.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch027_01",
+        "v3gold_batch027_02",
+        "v3gold_batch027_03",
+        "v3gold_batch027_04",
+        "v3gold_batch027_05",
+        "v3gold_batch027_06",
+        "v3gold_batch027_07"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v2/distribution_requirements_prose_columns.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v2/historical_course_inventory.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch014_biol_1810",
+        "v3gold_batch014_biol_1900",
+        "v3gold_batch014_biol_2000",
+        "v3gold_batch014_biol_2300",
+        "v3gold_batch014_biol_2400",
+        "v3gold_batch014_biol_2420",
+        "v3gold_batch014_biol_2550",
+        "v3gold_batch014_biol_2700",
+        "v3gold_batch014_biol_2800",
+        "v3gold_batch014_biol_2860"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v2/historical_inline_titles.json": {
+      "maximum_ambiguous_emitted_headers": 1,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch006_etymology",
+        "v3gold_batch006_republican_prose",
+        "v3gold_batch006_roman_epic",
+        "v3gold_batch006_roman_oratory",
+        "v3gold_batch006_roman_satire",
+        "v3gold_batch006_satire",
+        "v3gold_batch006_seminar",
+        "v3gold_batch006_silver_latin"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v2/mixed_requirements_grid_and_prose.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v2/noncourse_directory_grid.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v3/body_larger_than_headers.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch014_biol_1810",
+        "v3gold_batch014_biol_1900",
+        "v3gold_batch014_biol_2000",
+        "v3gold_batch014_biol_2300",
+        "v3gold_batch014_biol_2400",
+        "v3gold_batch014_biol_2420",
+        "v3gold_batch014_biol_2550",
+        "v3gold_batch014_biol_2700",
+        "v3gold_batch014_biol_2800",
+        "v3gold_batch014_biol_2860"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v3/compound_codes_and_relative_sections.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch016_art_2470",
+        "v3gold_batch016_art_2472",
+        "v3gold_batch016_art_3_60",
+        "v3gold_batch016_art_4_60"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v3/marked_historical_codes_and_metadata.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch059_latin_21",
+        "v3gold_batch059_latin_22",
+        "v3gold_batch059_latin_31",
+        "v3gold_batch059_latin_32",
+        "v3gold_batch059_latin_33_34",
+        "v3gold_batch059_latin_41"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v4/body_inventory_borrows_next_header.json": {
+      "maximum_ambiguous_emitted_headers": 2,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch009_mu105",
+        "v3gold_batch009_mu106",
+        "v3gold_batch009_mu108",
+        "v3gold_batch009_mu131",
+        "v3gold_batch009_mu132"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v5/numeric_inline_native_font_boundary.json": {
+      "maximum_ambiguous_emitted_headers": 1,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch077_329_g_510",
+        "v3gold_batch077_329_g_512",
+        "v3gold_batch077_329_g_516",
+        "v3gold_batch077_329_g_520",
+        "v3gold_batch077_329_g_530",
+        "v3gold_batch077_329_g_532",
+        "v3gold_batch077_329_g_550",
+        "v3gold_batch077_329_h_4300",
+        "v3gold_batch077_329_h_4320",
+        "v3gold_batch077_329_h_4330",
+        "v3gold_batch077_329_h_4340",
+        "v3gold_batch077_329_h_4380",
+        "v3gold_batch077_329_h_4500",
+        "v3gold_batch077_329_h_4600",
+        "v3gold_batch077_329_h_4620",
+        "v3gold_batch077_329_h_4625",
+        "v3gold_batch077_329_h_4630",
+        "v3gold_batch077_329_h_4635",
+        "v3gold_batch077_329_h_4640",
+        "v3gold_batch077_329_h_4650",
+        "v3gold_batch077_329_h_4685"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    },
+    "source_regressions_v6/numeric_pair_before_inline_description.json": {
+      "maximum_ambiguous_emitted_headers": 0,
+      "new_unaligned_nonambiguous_headers_allowed": 0,
+      "required_existing_gold_ids": [
+        "v3gold_batch006_advanced_food",
+        "v3gold_batch006_advanced_nutrition",
+        "v3gold_batch006_diet_therapy",
+        "v3gold_batch006_meal_management",
+        "v3gold_batch006_readings_foods"
+      ],
+      "truth_basis": "EXISTING_SOURCE_IMAGE_REVIEW_NOT_PARSER_OUTPUT"
+    }
+  }
+}

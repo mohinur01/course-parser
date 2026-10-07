@@ -1,0 +1,15 @@
+{
+  "cases": 6,
+  "evaluation_manifest_sha256": "bb4114b055524212eaca2ae62282e9f01594d5a3e10303f781a6f4e3255ca666",
+  "file_sha256": {
+    "credit_and_metadata.json": "809ec948920afcbca2a84910cc378fcfdd13f9117af49e6afa7bc9c9bfc63e5b",
+    "distribution_requirements_prose_columns.json": "48048e87604a3d9ae9fd7b9551b0face046ea5af3c04e6693f39d10c69908690",
+    "historical_course_inventory.json": "eb856328a031cc7b80dfa37507958580b72bc061051555e1c21db463978f8e83",
+    "historical_inline_titles.json": "1467e2ccf745670ba253661cd2abaf86447e54c4945bba9b68353b469ec459d4",
+    "mixed_requirements_grid_and_prose.json": "36eddf97e324496a72f86a6a8c1e06db79ff405a39edf4fab6ecc809261028bb",
+    "noncourse_directory_grid.json": "5449fa22fddb3f7f91cf5a242e7b8459d238ab9e667fba9ea2bcc6addd5312d9"
+  },
+  "pilot_manifest_sha256": "ec2f6321a4e951ee3e2f9ed455993af597e1c82dcb4b3a8d5b5c515d00b0d805",
+  "protected_evaluation_opened": false,
+  "status": "TUNING_SOURCE_CASES_FROZEN"
+}

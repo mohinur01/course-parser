@@ -1,0 +1,23 @@
+{
+  "schema_version": "course-parser-learning-partition-registry-v1",
+  "split": "DEVELOPMENT",
+  "seed": "course-parser-source-learning-2026-10-06-v1",
+  "provenance": "Preserves the first pilot's institution assignments, frozen before course-truth import. Reuse this registry when extending the cohort; new families receive stable hash assignments.",
+  "evaluation_scope": "Exposed DEVELOPMENT validation; not an independent final test.",
+  "families": {
+    "institution_0008285766dcabc77b7e4fb3": "TUNING",
+    "institution_0875bbc6f5341b42bf68f6da": "TUNING",
+    "institution_1a9a494ca4f1b08c76012400": "TUNING",
+    "institution_2f14e8dfbcff990158c09be5": "VALIDATION",
+    "institution_7765d397cb372aa09e93e052": "VALIDATION",
+    "institution_949407d3302956f5ba0bd327": "VALIDATION",
+    "institution_9824b66cf0c2e09fbebdf762": "TUNING",
+    "institution_aca3476de1bd7cb1ef63f7cc": "TUNING",
+    "institution_ae86f22584457f2f9d14ed08": "TUNING",
+    "institution_c2b1c30448ea266a0ed9300d": "VALIDATION",
+    "institution_c2e0d3fda27c58ca8d34e085": "TUNING",
+    "institution_dfefb4c0d125aac372f9613c": "TUNING",
+    "institution_ede8ba6bf3cc821279a1c103": "TUNING",
+    "institution_fd237ee9ab00de17a180196d": "TUNING"
+  }
+}

@@ -1,0 +1,28 @@
+# Python build output and local caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Environments and generated research artifacts stay on this machine.
+.venv/
+.venv-engines/
+artifacts/
+tmp/
+
+# Local credentials and machine-specific settings.
+.env
+.env.*
+!.env.example
+!.env.sample
+.aws/
+.ssh/
+.netrc
+*.pem
+*.key
+
+# macOS folder metadata.
+.DS_Store

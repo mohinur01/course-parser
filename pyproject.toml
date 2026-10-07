@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "course-parser-evidence"
+version = "0.24.0"
+description = "Source-reviewed development learning loop for university course extraction"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.7", "pymupdf>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2", "ruff>=0.4"]
+
+[project.scripts]
+course-parser = "course_parser.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "--strict-markers"
+markers = ["regression: permanent behavior catalogue (use --regression-suite for the complete gate)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

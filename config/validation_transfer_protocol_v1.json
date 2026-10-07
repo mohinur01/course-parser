@@ -1,0 +1,13 @@
+{
+  "fresh_reservation": "artifacts/validation-transfer-v1/fresh-validation-reservation-v3",
+  "fresh_reservation_sha256": "a506e74c2d71192370db91c6a8783b7e805517fb362071d9b1ed2a2810e556cf",
+  "holdout_family_count": 6,
+  "holdout_windows": 34,
+  "old_partition_registry_preserved": "source_learning_partitions_v1.json",
+  "old_validation_course_count": 15,
+  "old_validation_scope": "Previously exposed diagnostic, now intentionally analyzed for feature/rule development at user request; no future generalization claim from this set.",
+  "opening_gate": "Parser code and tests must be frozen before any reserved page image, text, prediction, or answer is opened. Do not retune after holdout outcomes.",
+  "protected_calibration_test_pools": "UNOPENED_AND_EXCLUDED",
+  "schema_version": "course-parser-validation-transfer-protocol-v1",
+  "status": "CURRENT_VALIDATION_RECLASSIFIED_AS_EXPOSED_DIAGNOSTIC"
+}

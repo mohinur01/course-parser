@@ -1,0 +1,11 @@
+{
+  "file_sha256": {
+    "body_inventory_borrows_next_header.json": "393edc846f382645d346c7f4737a697c67bcbf60817ae5a8aa4f5dc0d91cb0bd",
+    "prerequisite_borrows_next_header.json": "13d890b5a42db0a97cf2e3dc62c9d5d1f459753c3e0172fb8c9e89692a8e356c"
+  },
+  "gold_evaluation_manifest_sha256": "9f38f3cfcad27d5d2702598afa58f993cb119899abcf902080cf553339f78f2e",
+  "pilot_manifest_sha256": "ec2f6321a4e951ee3e2f9ed455993af597e1c82dcb4b3a8d5b5c515d00b0d805",
+  "protected_evaluation_opened": false,
+  "schema_version": "course-parser-source-regressions-v4",
+  "status": "EXPOSED_TUNING_SOURCE_CASES"
+}

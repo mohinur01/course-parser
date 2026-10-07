@@ -1,0 +1,10 @@
+{
+  "cases": 1,
+  "evaluation_manifest_sha256": "59d180b255299c3c5dc76160a2e12844aa6e11aa957806b0ec0293b22dac20e6",
+  "file_sha256": {
+    "numeric_pair_before_inline_description.json": "251e15fab27088f8ee16f777dd00bc39675b7bba52735cae5d1a3a76afee4077"
+  },
+  "pilot_manifest_sha256": "ec2f6321a4e951ee3e2f9ed455993af597e1c82dcb4b3a8d5b5c515d00b0d805",
+  "protected_evaluation_opened": false,
+  "status": "TUNING_SOURCE_CASES_FROZEN"
+}

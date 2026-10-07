@@ -1,0 +1,115 @@
+{
+  "approved_exposed_evaluations": {
+    "expanded-before": {
+      "manifest_sha256": "5bc53ce11f16e2001d6b1f87aaa648137992cedb3f80234ab9906866e376e2d5",
+      "path": "artifacts/table-ownership-v1/release/measurement/after"
+    },
+    "expanded-current": {
+      "manifest_sha256": "7ae8e8d54553300ffe4f412befd241b970d4ad433b85cc5ad5c8c3aa77eb2bf9",
+      "path": "artifacts/validation-transfer-v1/release/expanded-evaluation"
+    },
+    "original-before": {
+      "manifest_sha256": "b19be5b7a5dce204b2c91c21b9414b7a08a3d420b4f9ad4d3b735c3287d965da",
+      "path": "artifacts/progress-measurement-20261006/original_current"
+    },
+    "original-current": {
+      "manifest_sha256": "af35b25b2eec63fed76d48a468d121efcce39ce5acdb8504d1af30ff885eff48",
+      "path": "artifacts/validation-transfer-v1/release/original-evaluation"
+    },
+    "phase10-expanded": {
+      "manifest_sha256": "6c4511f83daefa151fcfe85a960c9ddb43320bcfa983ab414509235ae9b3f1e7",
+      "path": "artifacts/ocr-recovery-phase10-v1/candidate-v2/expanded-evaluation"
+    },
+    "phase10-original": {
+      "manifest_sha256": "28a9861978e16a37ed8cb0769180104731dd24c5091c089546357440505b6914",
+      "path": "artifacts/ocr-recovery-phase10-v1/candidate-v2/original-evaluation"
+    },
+    "phase3-expanded": {
+      "manifest_sha256": "b1661aa4fdebbd1590c62fd5f9535d393cdf88fbbdcd14d84a0d27cc815ecfbc",
+      "path": "artifacts/ownership-phase3-v1/candidate-v2/expanded-evaluation"
+    },
+    "phase3-original": {
+      "manifest_sha256": "a7ce0fe3a6f3f752b113d294fd74fbf390c9b76c075d0e6232e8cf666f44dac3",
+      "path": "artifacts/ownership-phase3-v1/candidate-v2/original-evaluation"
+    },
+    "phase4-expanded": {
+      "manifest_sha256": "5a8731020a64ddf43d87b4825657e70a926ba33b1dc50930e9daea9052258840",
+      "path": "artifacts/page-pattern-phase4-v1/candidate-v2/expanded-evaluation"
+    },
+    "phase4-final-expanded": {
+      "manifest_sha256": "39e906fe0bf066758a9cd902eaf7abbcb5c3751fb778f1693e6622b9ab391314",
+      "path": "artifacts/page-pattern-phase4-v1/candidate-v3/expanded-evaluation"
+    },
+    "phase4-final-original": {
+      "manifest_sha256": "a4c06beab08527045c65321562928d992d0674d8a86674ff90170fe4e498c4bf",
+      "path": "artifacts/page-pattern-phase4-v1/candidate-v3/original-evaluation"
+    },
+    "phase4-original": {
+      "manifest_sha256": "a547593b85bcc50874445a57156da9af06984a87c943039f31ccc7027ba36e47",
+      "path": "artifacts/page-pattern-phase4-v1/candidate-v2/original-evaluation"
+    },
+    "phase5-expanded": {
+      "manifest_sha256": "b3600c38144454394ccc282e213e80781e73ee58cfb77805e76f2c4dc8eaebd6",
+      "path": "artifacts/historical-detection-phase5-v1/candidate-v1/expanded-evaluation"
+    },
+    "phase5-original": {
+      "manifest_sha256": "babe1199e1c675c2d5eedaf6946ffa6adb912f0106f5a0c5e55011526e4303e3",
+      "path": "artifacts/historical-detection-phase5-v1/candidate-v1/original-evaluation"
+    },
+    "phase7-expanded": {
+      "manifest_sha256": "1328b5ded858464ccaef6f46adfefbcf38c21d5284a18ec171d65c941c7780b7",
+      "path": "artifacts/boundary-phase7-v1/candidate-v1/expanded-evaluation"
+    },
+    "phase7-original": {
+      "manifest_sha256": "1fa0bbc97c2d21c9b8708015213d76dbd5df95b93147fb00d8fea5906fda6329",
+      "path": "artifacts/boundary-phase7-v1/candidate-v1/original-evaluation"
+    },
+    "phase8-expanded": {
+      "manifest_sha256": "7f56479be0c4ecfed63a9c3205124514d2d44a7339b7d24714439bfcff163ab6",
+      "path": "artifacts/continuation-phase8-v1/candidate-v1/expanded-evaluation"
+    },
+    "phase8-original": {
+      "manifest_sha256": "43129f6a40b4fe9452b4b00dfcba2a4dbab0b8131a09b49c0c6ba92c2cbdd4df",
+      "path": "artifacts/continuation-phase8-v1/candidate-v1/original-evaluation"
+    },
+    "phase9-expanded": {
+      "manifest_sha256": "5a0b149e39d6bc2e5e33e0e2a47312b54a3898a1102a74ec1c0cb7f3e81f0a67",
+      "path": "artifacts/reading-order-phase9-v1/candidate-v2/expanded-evaluation"
+    },
+    "phase9-original": {
+      "manifest_sha256": "3cdc8de16688b90c49af212084cb8484f4491fe5d972733c2deb409fce947730",
+      "path": "artifacts/reading-order-phase9-v1/candidate-v2/original-evaluation"
+    }
+  },
+  "authority": "User instruction on 2026-10-06: implement using TUNING, DEVELOPMENT, existing exposed diagnostic examples, regression cases and permitted source material only.",
+  "blocked_paths": [
+    "artifacts/validation-transfer-v1/heldout-review",
+    "artifacts/validation-transfer-v1/holdout-source-tree",
+    "artifacts/validation-transfer-v1/heldout_identity_observations.jsonl",
+    "artifacts/validation-transfer-v1/heldout_identity_manifest.json",
+    "artifacts/validation-transfer-v1/fresh-validation-reservation-v1",
+    "artifacts/validation-transfer-v1/fresh-validation-reservation-v2",
+    "artifacts/validation-transfer-v1/fresh-validation-reservation-v3"
+  ],
+  "forbidden_reserved_actions": [
+    "inspect",
+    "open",
+    "score",
+    "summarize",
+    "use_review_answers",
+    "use_source_material"
+  ],
+  "permitted_material": [
+    "TUNING",
+    "DEVELOPMENT",
+    "EXISTING_EXPOSED_DIAGNOSTICS",
+    "REGRESSION_CASES",
+    "PERMITTED_SOURCE_MATERIAL"
+  ],
+  "reserved_cohort_access": "SEALED",
+  "reserved_cohort_gate": "All 18 phases must be complete and the parser must be frozen before reserved cohort access is permitted. An earlier parser freeze alone is insufficient.",
+  "schema_version": "course-parser-development-phase-execution-v1",
+  "status": "DEVELOPMENT_ONLY_RESERVED_COHORT_SEALED",
+  "supersedes": "The earlier opening_gate in validation_transfer_protocol_v1.json. Its historical frozen snapshot remains unchanged.",
+  "total_phases": 18
+}

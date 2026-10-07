@@ -1,0 +1,27 @@
+{
+  "schema_version": "course-parser-evaluation-design-v1",
+  "authority": "Phase 13 user instruction: permitted development material only; reserved cohort remains sealed through all 18 phases and parser freeze.",
+  "roles": {
+    "TUNING": "Rule development and model fitting on permitted material. Scores are development diagnostics.",
+    "EXPOSED_DIAGNOSTIC": "Existing inspected validation examples, including the original 15 courses. May inform rules; cannot prove untouched generalization.",
+    "FRESH_VALIDATION": "Existing reserved cohort. No inspection, source use, scoring or review-answer access until all 18 phases complete and parser frozen.",
+    "TEST": "Separate protected release evaluation. Unopened and excluded from phase work; release use requires its own protocol and authorization."
+  },
+  "legacy_partition_display": {"TUNING": "TUNING", "VALIDATION": "EXPOSED_DIAGNOSTIC"},
+  "historical_artifacts_and_partition_registry": "Preserved; diagnostic overlays do not rewrite old scores or assignments.",
+  "grouping_keys": ["stable institution and alias IDs", "declared catalog/template family", "source PDF checksum", "overlapping physical context pages"],
+  "grouping_policy": "Take the transitive union of all known dependency links. A connected family cannot cross evaluation roles. Keep all catalog years of an institution together for institution-transfer claims.",
+  "template_similarity_limit": "Stable identities do not establish template independence. Unknown cross-institution catalog-family links require permitted source review before any template-transfer claim.",
+  "future_freeze_contract": [
+    "All 18 phases completed with reviewable evidence; a version label alone is insufficient.",
+    "Pin parser code, rules/configuration, model/tokenizer versions, dependencies, sampling/split manifests, metric definitions and scoring code.",
+    "Freeze predictions independently of answers and use unique central-page course starts for denominators.",
+    "Predeclare strict core completion, field diagnostics, false proposals, ownership/contamination, unresolved sources, abstentions and cost.",
+    "Report per-institution results and family-level uncertainty; overlapping windows and repeated catalog years are not independent observations.",
+    "After outcomes influence a change, mark the cohort exposed and require another untouched cohort for renewed confirmation."
+  ],
+  "current_access": "DEVELOPMENT_ONLY",
+  "reserved_access_authorized_by_this_file": false,
+  "fresh_cohort_created_or_reselected_in_phase13": false,
+  "strict_scoring_changed": false
+}

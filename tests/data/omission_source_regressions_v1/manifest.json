@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "decimal_code_only_headers",
+    "administrative_display_headings",
+    "same_title_distinct_course_positions",
+    "supported_pattern_without_description"
+  ],
+  "file_sha256": {
+    "administrative_display_headings.json": "de68e295942ca86aac48a7f24f3413fc6d5aaed551b1923f0618235c6ec5cedc",
+    "decimal_code_only_headers.json": "dd0b9fe9ff6ea9308f42e8d3286f7eea52de715171418643a50322c50f9d8c40",
+    "same_title_distinct_course_positions.json": "305ca3e3ac6a228aaedb80b8fca5d680574bfc822e15a1da7088f038910d69fe",
+    "supported_pattern_without_description.json": "e1f91cb7179b60c2d8e629e7d2b753708d124e9c07a14956fff08c5c5842612d"
+  },
+  "reserved_cohort_access": "SEALED",
+  "scope": "SOURCE_OBSERVATIONS_NOT_NEW_GOLD"
+}
